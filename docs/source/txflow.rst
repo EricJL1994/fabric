@@ -53,7 +53,7 @@ cryptographic credentials to produce a unique signature for this transaction pro
 
 1. **El ciente A inicia la transacción**
 
-*¿Qué pasa? - El cliente A está enviando una petición para comprar rábanos. La petición se dirige a* ``parA`` *y* ``parB``*,que son respectivamente representantes del Cliente A y del Cliente B. La política de endose establece que ambos pares deben respaldar cualquier transacción, por lo tanto, la solicitud se envía a* ``parA`` *y* ``parB``*.*
+*¿Qué pasa? - El cliente A está enviando una petición para comprar rábanos. La petición se dirige a* ``parA`` *y* ``parB`` *,que son respectivamente representantes del Cliente A y del Cliente B. La política de endose establece que ambos pares deben respaldar cualquier transacción, por lo tanto, la solicitud se envía a* ``parA`` *y* ``parB``*.*
 
 *A continuación, la propuesta de transacción es construida. Una aplicación basada en un SDK soportado (Node, Java, Python) usa una de las APIs disponibles que genera una propuesta de transacción. La propuesta es una petición para invocar una función del chaincode para que los datos puedan ser leidos y/o escritos en el ledger (por ejemplo, escribir un nuevo par valor-clave de bienes). El SDK sirve como un complemento para empaquetar la propuesta de transacción  en el formato arquitectónico adecuado (búfer de protocolo sobre gRPC) y toma las credenciales criptográficas del usuario para producir una firma única para esta propuesta de transacción.*
 
