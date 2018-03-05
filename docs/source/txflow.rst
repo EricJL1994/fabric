@@ -86,6 +86,8 @@ which user is entitled to submit a transaction to that channel.}
 
 *Los pares que respaldan verifican que (1) la propuesta de transacción está bien formada, (2) no se ha enviado ya en el pasado (protección de ataque de repetición), (3) la firma es válida (utilizando MSP) y (4) el remitente (el Cliente A, en el ejemplo) está debidamente autorizado para realizar la operación propuesta en ese canal (es decir, cada par endosante se asegura de que el remitente cumpla con la política de* Escritor *del canal). Los pares endosantes toman las entradas de la propuesta de transacción como argumentos para la función del chaincode invocado. El chaincode se ejecuta luego contra la base de datos de estado actual para producir resultados de transacción que incluyen un valor de respuesta, un conjunto de lectura y un conjunto de escritura. No se realizan actualizaciones en el ledger en este punto. El conjunto de estos valores, junto con la firma del par de endose, se transmite como una "propuesta de respuesta" al SDK que analiza la carga útil de la aplicación que va a consumir.*
 
+*{El MSP es un componente de los pares que les permite verificar las solicitudes de transacciones que llegan de los clientes y firmar los resultados de las transacciones (endosos). La política de escritura se define en el momento de creación del canal y determina qué usuario tiene derecho a enviar una transacción a ese canal.}*
+
 .. image:: images/step3.png
 
 3. **Proposal responses are inspected**
@@ -100,6 +102,13 @@ The architecture is such that even if an application chooses not to inspect resp
 forwards an unendorsed transaction, the endorsement policy will still be enforced by peers
 and upheld at the commit validation phase.
 
+
+
+
+3. **Las propuestas de respuesta son inspeccionadas**
+
+*La aplicación verifica las firmas de los pares de confirmación y compara las propuestas de respuesta para determinar si las propuestas de respuesta son las mismas. Si el chaincode solo consultaba el ledger, la aplicación inspeccionaría la respuesta de la consulta y normalmente no enviaría la transacción al servicio de pedidos. Si la aplicación del cliente tiene la intención de enviar la transacción al Servicio de pedidos para actualizar el ledger, la aplicación determina si la política de endoso especificada se ha cumplido antes de enviarla (es decir, si tanto parA como parB endosan). La arquitectura es tal que, incluso si una aplicación elige no inspeccionar las respuestas o reenviar una transacción no endosada, la política de endoso seguirá siendo aplicada por los pares y confirmada en la fase de validación de compromiso.*
+
 .. image:: images/step4.png
 
 4. **Client assembles endorsements into a transaction**
@@ -111,6 +120,12 @@ Ordering Service does not need to inspect the entire content of a transaction in
 its operation, it simply receives
 transactions from all channels in the network, orders them chronologically by
 channel, and creates blocks of transactions per channel.
+
+
+
+4. **El cliente ensambla la confirmación en una transacción**
+
+*La aplicación "difunde" la propuesta de transacción y la respuesta dentro de un "mensaje de transacción" al Servicio de pedido. La transacción contendrá los conjuntos de lectura / escritura, las firmas de los pares endosantes y la identificación del canal. El Servicio de pedidos no necesita inspeccionar todo el contenido de una transacción para realizar su operación, simplemente recibe transacciones de todos los canales en la red, las ordena cronológicamente por canal y crea bloques de transacciones por canal.*
 
 .. image:: images/step5.png
 
