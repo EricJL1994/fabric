@@ -26,7 +26,7 @@ any transaction.
 
 *Este flujo asume que un canal está configurado y en ejecución. La aplicación de usuario se ha registrado e inscrito con la autoridad de certificados (CA) de la organización y recibido el material criptográfico necesario, que es usado para autenticarse en la red.*
 
-*El chaincode (que contiene pares valor-clave representando el estado inicial del mercado de rábanos) está instalado en los pares e instanciado en el canal. El chaincode contiene la lógica definiendo las instrucciones de transacción y el precio acordado de los rábanos. También se ha establecido una política de aprobación para este chaincode, estableciendo que tanto ``parA`` como ``parB`` deben ratificar cualquier transacción*
+*El chaincode (que contiene pares valor-clave representando el estado inicial del mercado de rábanos) está instalado en los pares e instanciado en el canal. El chaincode contiene la lógica definiendo las instrucciones de transacción y el precio acordado de los rábanos. También se ha establecido una política de aprobación para este chaincode, estableciendo que tanto* ``parA`` *como* ``parB`` *deben ratificar cualquier transacción*
 
 .. image:: images/step1.png
 
