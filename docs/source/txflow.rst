@@ -6,6 +6,8 @@ exchange.  The scenario includes two clients, A and B, who are buying and sellin
 radishes.  They each have a peer on the network through which they send their
 transactions and interact with the ledger.
 
+*Este documento describe las técnicas de transacción durante un intercambio de bienes estandar.*
+
 .. image:: images/step0.png
 
 **Assumptions**
