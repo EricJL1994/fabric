@@ -6,7 +6,7 @@ exchange.  The scenario includes two clients, A and B, who are buying and sellin
 radishes.  They each have a peer on the network through which they send their
 transactions and interact with the ledger.
 
-*Este documento describe las técnicas de transacción durante un intercambio de bienes estandar.*
+*Este documento describe las técnicas de transacción durante un intercambio de bienes estandar. El ejemplo incluye dos clientes, A y B, que están comprando y vendiendo rábanos. Cada uno tiene un par en la red mediante el cual pueden enviar sus transaccines e interactuar con el ledger.*
 
 .. image:: images/step0.png
 
