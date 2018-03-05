@@ -6,6 +6,8 @@ exchange.  The scenario includes two clients, A and B, who are buying and sellin
 radishes.  They each have a peer on the network through which they send their
 transactions and interact with the ledger.
 
+
+
 *Este documento describe las técnicas de transacción durante un intercambio de bienes estandar. El ejemplo incluye dos clientes, A y B, que están comprando y vendiendo rábanos. Cada uno tiene un par en la red mediante el cual pueden enviar sus transaccines e interactuar con el ledger.*
 
 .. image:: images/step0.png
@@ -23,6 +25,8 @@ channel.  The chaincode contains logic defining a set of transaction
 instructions and the agreed upon price for a radish. An endorsement policy has
 also been set for this chaincode, stating that both ``peerA`` and ``peerB`` must endorse
 any transaction.
+
+
 
 *Este flujo asume que un canal está configurado y en ejecución. La aplicación de usuario se ha registrado e inscrito con la autoridad de certificados (CA) de la organización y recibido el material criptográfico necesario, que es usado para autenticarse en la red.*
 
@@ -45,6 +49,14 @@ pairs for the assets).  The SDK serves as a shim to package the transaction prop
 into the properly architected format (protocol buffer over gRPC) and takes the user’s
 cryptographic credentials to produce a unique signature for this transaction proposal.
 
+
+
+1. **El ciente A inicia la transacción**
+
+*¿Qué pasa? - El cliente A está enviando una petición para comprar rábanos. La petición se dirige a* ``parA`` *y* ``parB``*,que son respectivamente representantes del Cliente A y del Cliente B. La política de endose establece que ambos pares deben respaldar cualquier transacción, por lo tanto, la solicitud se envía a* ``parA`` *y* ``parB``*.*
+
+*A continuación, la propuesta de transacción es construida. Una aplicación basada en un SDK soportado (Node, Java, Python) usa una de las APIs disponibles que genera una propuesta de transacción. La propuesta es una petición para invocar una función del chaincode para que los datos puedan ser leidos y/o escritos en el ledger (por ejemplo, escribir un nuevo par valor-clave de bienes). El SDK sirve como un complemento para empaquetar la propuesta de transacción  en el formato arquitectónico adecuado (búfer de protocolo sobre gRPC) y toma las credenciales criptográficas del usuario para producir una firma única para esta propuesta de transacción.*
+
 .. image:: images/step2.png
 
 2. **Endorsing peers verify signature & execute the transaction**
@@ -63,11 +75,16 @@ made to the ledger at this point. The set of these values, along with the
 endorsing peer’s signature is passed back as a “proposal response” to the SDK
 which parses the payload for the application to consume.
 
-*{The MSP is a peer component that allows them to verify
+{The MSP is a peer component that allows them to verify
 transaction requests arriving from clients and to sign transaction results(endorsements).
 The Writing policy is defined at channel creation time, and determines
-which user is entitled to submit a transaction to that channel.}*
+which user is entitled to submit a transaction to that channel.}
 
+
+
+2. **Los pares que avalan verifican la firma y ejecutan la transacción**
+
+*Los pares que respaldan verifican que (1) la propuesta de transacción está bien formada, (2) no se ha enviado ya en el pasado (protección de ataque de repetición), (3) la firma es válida (utilizando MSP) y (4) el remitente (el Cliente A, en el ejemplo) está debidamente autorizado para realizar la operación propuesta en ese canal (es decir, cada par endosante se asegura de que el remitente cumpla con la política de* Escritor *del canal). Los pares endosantes toman las entradas de la propuesta de transacción como argumentos para la función del chaincode invocado. El chaincode se ejecuta luego contra la base de datos de estado actual para producir resultados de transacción que incluyen un valor de respuesta, un conjunto de lectura y un conjunto de escritura. No se realizan actualizaciones en el ledger en este punto. El conjunto de estos valores, junto con la firma del par de endose, se transmite como una "propuesta de respuesta" al SDK que analiza la carga útil de la aplicación que va a consumir.*
 
 .. image:: images/step3.png
 
