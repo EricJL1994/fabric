@@ -1,4 +1,4 @@
-Prerequisitos
+(ES) Prerequisitos
 =============
 
 Instalar cURL
@@ -58,20 +58,16 @@ Si no se muestra nada con echo ``$GOPATH``, necesitará configurarlo. Normalment
   export GOPATH=$HOME/go
   export PATH=$PATH:$GOPATH/bin
 
-Node.js Runtime and NPM
+Node.js Runtime y NPM
 -----------------------
 
-If you will be developing applications for Hyperledger Fabric leveraging the
-Hyperledger Fabric SDK for Node.js, you will need to have version 6.9.x of Node.js
-installed.
+Si va a desarrollar aplicaciones para Hyperledger Fabric aprovechando el Hyperledger Fabric SDK para Node.js, necesitará tener instalada la versión 6.9.x de Node.js
 
-.. note:: Node.js version 7.x is not supported at this time.
+.. note:: La versión 7.x de Node.js no es compatible en este momento.
 
-  - `Node.js <https://nodejs.org/en/download/>`__ - version 6.9.x or greater
+  - `Node.js <https://nodejs.org/en/download/>`__ - version 6.9.x o superior
 
-.. note:: Installing Node.js will also install NPM, however it is recommended
-          that you confirm the version of NPM installed. You can upgrade
-          the ``npm`` tool with the following command:
+.. note:: Instalar Node.js también instalará NPM, sin embargo es recomendado confirmar la versión NPM instalada. Puede actualizar la herramienta ``npm`` con el siguiente comando:
 
 .. code:: bash
 
@@ -80,63 +76,45 @@ installed.
 Extras de Windows
 --------------
 
-If you are developing on Windows, you will want to work within the
-Docker Quickstart Terminal which provides a better alternative to the
-built-in Windows such as `Git Bash <https://git-scm.com/downloads>`__
-which you typically get as part of installing Docker Toolbox on
-Windows 7.
+Si está desarrollando en Windows, querrá trabajar dentro de Docker Quickstart Terminal, que proporciona una mejor alternativa al incorporado en Windows como `Git Bash <https://git-scm.com/downloads>`__ que normalmente obtienes como parte de la instalación de Docker Toolbox en Windows 7.
 
-However experience has shown this to be a poor development environment
-with limited functionality. It is suitable to run Docker based
-scenarios, such as :doc:`getting_started`, but you may have
-difficulties with operations involving the ``make`` command.
+Si embargo, la experiencia demuestra que es un entorno de desarrollo pobre con funcionalidades limitadas. Es adecuado para ejecutar casos basados en Docker, tales como :doc:`getting_started`, pero puede tener dificultades con operaciones que involucren el comando ``make``.
 
-Before running any ``git clone`` commands, run the following commands:
+Antes de ejecutar ningún comando ``git clone``, ejecuta los siguientes comandos:
 
 ::
 
     git config --global core.autocrlf false
     git config --global core.longpaths true
 
-You can check the setting of these parameters with the following commands:
+Puedes comprobar los ajustes de estos parámetros con los siguientes comandos:
 
 ::
 
     git config --get core.autocrlf
     git config --get core.longpaths
 
-These need to be ``false`` and ``true`` respectively.
+Necesitan estar en ``false`` y ``true`` respectivamente.
 
-The ``curl`` command that comes with Git and Docker Toolbox is old and
-does not handle properly the redirect used in
-:doc:`getting_started`. Make sure you install and use a newer version
-from the `cURL downloads page <https://curl.haxx.se/download.html>`__
+El comando ``curl`` que viene con Git y Docker Toolbox es antiguo y no soporta correctamente la redirección usada en :doc:`getting_started`. Asegurese de instalar y usar una nueva versión desde la `página de descargas cURL <https://curl.haxx.se/download.html>`__
 
-For Node.js you also need the necessary Visual Studio C++ Build Tools
-which are freely available and can be installed with the following
-command:
+Para Node.js también necesita las herramientas de Visual Studio C++ Build Tools necesarias, que están disponible de forma gratuita y pueden ser instalada con el siguiente comando:
 
 .. code:: bash
 
 	  npm install --global windows-build-tools
 
-See the `NPM windows-build-tools page
-<https://www.npmjs.com/package/windows-build-tools>`__ for more
-details.
+Mirar la página `NPM windows-build-tools <https://www.npmjs.com/package/windows-build-tools>`__ para más detalles.
 
-Once this is done, you should also install the NPM GRPC module with the
-following command:
+Una vez que esto esté hecho, debería installar el módulo NPM GRPC con el siguiente comando:
 
 .. code:: bash
 
 	  npm install --global grpc
 
-Your environment should now be ready to go through the
-:doc:`getting_started` samples and tutorials.
+Su entorno debería estar listo para realizar los ejemplos y tutoriales de :doc:`getting_started`.
 
-.. note:: If you have questions not addressed by this documentation, or run into
-          issues with any of the tutorials, please visit the :doc:`questions`
-          page for some tips on where to find additional help.
+.. note:: Si tiene preguntas no abordadas en esta documentación, o se encuentra con problemas con cualquier tutorial, por favor visite la página :doc:`questions`para más consejos donde puede encontrar ayuda adicional.
 
 .. Licensed under Creative Commons Attribution 4.0 International License
    https://creativecommons.org/licenses/by/4.0/
