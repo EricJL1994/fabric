@@ -1,4 +1,4 @@
-Antes de empezar
+(ES) Antes de empezar
 ===============
 
 Instalar prerequisitos
@@ -32,33 +32,18 @@ Hyperledger Fabric tiene la intención de ofrecer un numero de SDKs para una amp
 Hyperledger Fabric CA
 ^^^^^^^^^^^^^^^^^^^^^
 
-Hyperledger Fabric provides an optional
-`certificate authority service <http://hyperledger-fabric-ca.readthedocs.io/en/latest>`_
-that you may choose to use to generate the certificates and key material
-to configure and manage identity in your blockchain network. However, any CA
-that can generate ECDSA certificates may be used.
+Hyperledger Fabric ofrece un `servicio de autoridad certificadora <http://hyperledger-fabric-ca.readthedocs.io/en/latest>`_ opcional que puede elegir para generar los certificados y claves para configurar y gestionar la identidad en tu red de blockchain. Sin embargo, cualquier CA que pueda generar certificados ECDSA puede ser usado.
 
-Tutorials
+Tutoriales
 ^^^^^^^^^
 
-We offer four initial tutorials to get you started with Hyperledger Fabric.
-The first is oriented to the Hyperledger Fabric **application developer**,
-:doc:`write_first_app`. It takes you through the process of writing your first
-blockchain application for Hyperledger Fabric using the Hyperledger Fabric
-`Node SDK <https://github.com/hyperledger/fabric-sdk-node>`__.
+Ofrecemos 4 tutoriales para empezar con Hyperledger Fabric. El primero está orientado al desarrollador de aplicaciones de Hyperledger Fabric :doc:`write_first_app`. Le lleva a través del proceso de escribir su primera aplicación de blockchain para Hyperledger Fabric usando el `SDK de Node <https://github.com/hyperledger/fabric-sdk-node>`__.
 
-The second tutorial is oriented towards the Hyperledger Fabric network
-operators, :doc:`build_network`. This one walks you through the process of
-establishing a blockchain network using Hyperledger Fabric and provides
-a basic sample application to test it out.
+El segundo tutorial está orientado hacia los operadores de red de Hyperledger Fabric, :doc:`build_network`. Este le lleva a través del proceso para establecer una red de blockchain usando Hyperledger Fabric y proporciona una aplicación básica de ejemplo para probarlo.
 
-Finally, we offer two chaincode tutorials. One oriented to developers,
-:doc:`chaincode4ade`, and the other oriented to operators,
-:doc:`chaincode4noah`.
+Finalmente, ofrecemos dos tutoriales de chaincode. Uno orientado a desarrolladores, :doc:`chaincode4ade`, y el otro orientado a operadores, :doc:`chaincode4noah`.
 
-.. note:: If you have questions not addressed by this documentation, or run into
-          issues with any of the tutorials, please visit the :doc:`questions`
-          page for some tips on where to find additional help.
+.. note:: Si tiene preguntas no abordadas en esta documentación, o se encuentra con problemas con cualquier tutorial, por favor visite la página :doc:`questions` para más consejos donde puede encontrar ayuda adicional.
 
 .. Licensed under Creative Commons Attribution 4.0 International License
    https://creativecommons.org/licenses/by/4.0/
