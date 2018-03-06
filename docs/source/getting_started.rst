@@ -1,45 +1,33 @@
-Getting Started
+Antes de empezar
 ===============
 
-Install Prerequisites
+Instalar prerequisitos
 ^^^^^^^^^^^^^^^^^^^^^
 
-Before we begin, if you haven't already done so, you may wish to check that
-you have all the :doc:`prereqs` installed on the platform(s)
-on which you'll be developing blockchain applications and/or operating
-Hyperledger Fabric.
+Antes de empezar, si no lo ha hecho, es posible que desee comprobar que posee todos los :doc:`prereqs` instalado en la plataforma en la que va a desarrollar las aplicaciones de blockchain y/o operando Hyperledger Fabric.
 
-Install Binaries and Docker Images
+Instalar Binaries y Docker Images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-While we work on developing real installers for the Hyperledger Fabric
-binaries, we provide a script that will :ref:`binaries` to your system.
-The script also will download the Docker images to your local registry.
+Mientras trabajamos en desarrollar instaladores reales para los binarios de Hyperledger Fabric, proporcionamos un script que va a :ref:`binaries` en tu sistema.
 
-Hyperledger Fabric Samples
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejemplos de Hyperledger Fabric
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We offer a set of sample applications that you may wish to install these
-:doc:`samples` before starting with the tutorials as the tutorials leverage
-the sample code.
+Ofrecemos un conjunto de aplicaciones de ejemplo que, es posible que desee instalar estos :doc:`samples` antes de empezar con los tutoriales ya que aprovechan el código de ejemplo.
 
-API Documentation
-^^^^^^^^^^^^^^^^^
+Documentación de la API
+^^^^^^^^^^^^^^^^^^^^^^^
 
-The API documentation for Hyperledger Fabric's Golang APIs can be found on
-the godoc site for `Fabric <http://godoc.org/github.com/hyperledger/fabric>`_.
-If you plan on doing any development using these APIs, you may want to
-bookmark those links now.
+La documentación para la API Golang de Hyperledger Fabric se puede encontrar en la web de godoc para `Fabric <http://godoc.org/github.com/hyperledger/fabric>`_. Si planea hacer algún desarrollo usando estas APIs, tal vez quiera marcar estos enlaces ahora.
 
 Hyperledger Fabric SDKs
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Hyperledger Fabric intends to offer a number of SDKs for a wide variety of
-programming languages. The first two delivered SDKs are the Node.js and Java
-SDKs. We hope to provide Python and Go SDKs soon after the 1.0.0 release.
+Hyperledger Fabric tiene la intención de ofrecer un numero de SDKs para una amplia variedad de lenguajes de programación. Los dos primeros son los SDKs para Node.js y Java. Esperamos proveer los SDKs para Python y Go después de el lanzamiento de la versión 1.0.0.
 
-  * `Hyperledger Fabric Node SDK documentation <https://fabric-sdk-node.github.io/>`__.
-  * `Hyperledger Fabric Java SDK documentation <https://github.com/hyperledger/fabric-sdk-java>`__.
+  * `Documentación para Hyperledger Fabric Node SDK <https://fabric-sdk-node.github.io/>`__.
+  * `Documentación para Hyperledger Fabric Java SDK <https://github.com/hyperledger/fabric-sdk-java>`__.
 
 Hyperledger Fabric CA
 ^^^^^^^^^^^^^^^^^^^^^
