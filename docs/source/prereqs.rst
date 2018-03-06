@@ -114,7 +114,7 @@ Una vez que esto esté hecho, debería installar el módulo NPM GRPC con el sigu
 
 Su entorno debería estar listo para realizar los ejemplos y tutoriales de :doc:`getting_started`.
 
-.. note:: Si tiene preguntas no abordadas en esta documentación, o se encuentra con problemas con cualquier tutorial, por favor visite la página :doc:`questions`para más consejos donde puede encontrar ayuda adicional.
+.. note:: Si tiene preguntas no abordadas en esta documentación, o se encuentra con problemas con cualquier tutorial, por favor visite la página :doc:`questions` para más consejos donde puede encontrar ayuda adicional.
 
 .. Licensed under Creative Commons Attribution 4.0 International License
    https://creativecommons.org/licenses/by/4.0/
