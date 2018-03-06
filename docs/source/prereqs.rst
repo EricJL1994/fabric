@@ -1,16 +1,12 @@
-Prerequisites
+Prerequisitos
 =============
 
-Install cURL
+Instalar cURL
 ------------
 
-Download the latest version of the `cURL
-<https://curl.haxx.se/download.html>`__ tool if it is not already
-installed or if you get errors running the curl commands from the
-documentation.
+Descargar la última versión de la herramienta `cURL <https://curl.haxx.se/download.html>`__ si no está ya instaladao si tienes errores al ejecutar los comandos de curl de la documentación.
 
-.. note:: If you're on Windows please see the specific note on `Windows
-   extras`_ below.
+.. note:: Si estás en Windows, por favor leer las notas `Extras de Windows`_ debajo.
 
 Docker and Docker Compose
 -------------------------
@@ -95,7 +91,7 @@ installed.
 
   npm install npm@3.10.10 -g
 
-Windows extras
+Extras de Windows
 --------------
 
 If you are developing on Windows, you will want to work within the
