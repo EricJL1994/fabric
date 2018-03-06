@@ -4,37 +4,30 @@ Prerequisitos
 Instalar cURL
 ------------
 
-Descargar la última versión de la herramienta `cURL <https://curl.haxx.se/download.html>`__ si no está ya instaladao si tienes errores al ejecutar los comandos de curl de la documentación.
+Descargar la última versión de la herramienta `cURL <https://curl.haxx.se/download.html>`__ si no está ya instalada o si tiene errores al ejecutar los comandos de curl de la documentación.
 
-.. note:: Si estás en Windows, por favor leer las notas `Extras de Windows`_ debajo.
+.. note:: Si está utilizando Windows, por favor leer las notas `Extras de Windows`_ debajo.
 
-Docker and Docker Compose
+Docker y Docker Compose
 -------------------------
 
-You will need the following installed on the platform on which you will be
-operating, or developing on (or for), Hyperledger Fabric:
-
-  - MacOSX, *nix, or Windows 10: `Docker <https://www.docker.com/products/overview>`__
-    Docker version 17.03.0-ce or greater is required.
-  - Older versions of Windows: `Docker
+Necesitará instalado lo siguiente en la plataforma en la que se opera o en/para la que se desarrolla.
+Hyoerledger Fabric:
+  - MacOSX, *nix, o Windows 10: `Docker <https://www.docker.com/products/overview>`__
+    Docker versión 17.03.0-ce o superior.
+  - Versiones antiguas de Windows: `Docker
     Toolbox <https://docs.docker.com/toolbox/toolbox_install_windows/>`__ -
-    again, Docker version Docker 17.03.0-ce or greater is required.
+    , Docker versión Docker 17.03.0-ce o superior.
 
-You can check the version of Docker you have installed with the following
-command from a terminal prompt:
+Puede comprobar la versión de Docker que tiene instalada con el siguiente comando en el terminal:
 
 .. code:: bash
 
   docker --version
 
-.. note:: Installing Docker for Mac or Windows, or Docker Toolbox will also
-          install Docker Compose. If you already had Docker installed, you
-          should check that you have Docker Compose version 1.8 or greater
-          installed. If not, we recommend that you install a more recent
-          version of Docker.
+.. note:: Instalar Docker para Mac o Windows, o Docker Toolbox instalará Docker Compose. Si ya tiene Docker instalado, debería comprobar que tiene instalado Docker Compose versión 1.8 o superior. Si no, recomendamos que instale una versión más reciente de Docker.
 
-You can check the version of Docker Compose you have installed with the
-following command from a terminal prompt:
+Puede comprobar la versión de Docker Compose que tiene instalada con el siguiente comando en el terminal:
 
 .. code:: bash
 
@@ -42,30 +35,23 @@ following command from a terminal prompt:
 
 .. _Golang:
 
-Go Programming Language
+Lenguaje de programación Go
 -----------------------
 
-Hyperledger Fabric uses the Go programming language 1.7.x for many of its
-components.
+Hyperledger Fabric usa el lenguaje de programación Go 1.7.x para algunos de sus componentes.
 
 .. note: Go version 1.8.x will yield test failures
 
   - `Go <https://golang.org/>`__ - version 1.7.x
 
-Given that we are writing a Go chaincode program, we need to be sure that the
-source code is located somewhere within the ``$GOPATH`` tree. First, you will
-need to check that you have set your ``$GOPATH`` environment variable.
+Dado que estamos escribiendo un programa de chaincode en Go, necesitamos estar seguros de que el código fuente está situado en algún ligar dentro del arbol ``$GOPATH``. Primero, necesita comprobar que la variable del entorno ``$GOPAHT`` está definida.
 
 .. code:: bash
 
   echo $GOPATH
   /Users/xxx/go
 
-If nothing is displayed when you echo ``$GOPATH``, you will need to set it.
-Typically, the value will be a directory tree child of your development
-workspace, if you have one, or as a child of your $HOME directory. Since we'll
-be doing a bunch of coding in Go, you might want to add the following to your
-``~/.bashrc``:
+Si no se muestra nada con echo ``$GOPATH``, necesitará configurarlo. Normalmente, el valor será un subdirectorio de tu espacio de desarrollo si tiene uno, o uno de tu directorio $HOME. Como vamos a hacer mucha programación en Go, es poasible que desee agregar lo siguiente a tu ``~/.bashrc``:
 
 .. code:: bash
 
