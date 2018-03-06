@@ -31,7 +31,7 @@ Business:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting Started
+   :caption: Antes de empezar
 
    prereqs
    getting_started
@@ -39,7 +39,7 @@ Business:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Key Concepts
+   :caption: Conceptos clave
 
    blockchain
    capabilities
@@ -48,7 +48,7 @@ Business:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Tutorials
+   :caption: Tutoriales
 
    build_network
    write_first_app
@@ -59,7 +59,7 @@ Business:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Operations Guide
+   :caption: Guía de operaciones
 
    best_practices
    msp
@@ -73,7 +73,7 @@ Business:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Architecture
+   :caption: Arquitectura
 
    arch-deep-dive
    txflow
@@ -87,13 +87,13 @@ Business:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Troubleshooting and FAQs
+   :caption: Solución de problemas y FAQs
 
    Fabric-FAQ
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contributing
+   :caption: Contribuir
 
    CONTRIBUTING
    MAINTAINERS
@@ -110,7 +110,7 @@ Business:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Appendix
+   :caption: Apéndice
 
    glossary
    releases
