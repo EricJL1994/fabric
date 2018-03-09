@@ -1,7 +1,7 @@
 (ES) Flujo de transacciones
 ================
-`Ver documento original
-<http://hyperledger-fabric.readthedocs.io/en/release/txflow.html>`__ 
+
+`Original <http://hyperledger-fabric.readthedocs.io/en/release/txflow.html>`__ 
 
 Este documento describe las técnicas de transacción durante un intercambio de bienes estandar. El ejemplo incluye dos clientes, A y B, que están comprando y vendiendo rábanos. Cada uno tiene un par en la red mediante el cual pueden enviar sus transaccines e interactuar con el ledger.
 
