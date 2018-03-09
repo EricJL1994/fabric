@@ -1,5 +1,6 @@
 (ES) Antes de empezar
 ===============
+`Original <https://hyperledger-fabric.readthedocs.io/en/release-1.0/getting_started.html>`__
 
 Instalar prerequisitos
 ^^^^^^^^^^^^^^^^^^^^^
