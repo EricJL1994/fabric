@@ -1,5 +1,6 @@
 (ES) Prerequisitos
 =============
+`Original <https://hyperledger-fabric.readthedocs.io/en/release-1.0/prereqs.html>`__
 
 Instalar cURL
 ------------
